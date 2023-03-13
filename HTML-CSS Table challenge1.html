@@ -1,56 +1,78 @@
 <!DOCTYPE html>
-<html>
 <body>
 <head>
-<style>
-    table {
-			width: 100%;
-			border: 4px solid #800080;
-			border-collapse: collapse;
-			font-family: 'Helvetica Neu', cursive;
-            text-align: center;
-		}
-
-	thead {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-	}
-
-	tfoot {
-		background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
-	}
-
-	td, th {
-		padding: 20px;
-        font-weight: bold;
-        text-align: center;
-	}
-
-	th {
-		font-family: 'Rock Salt', cursive;
-		font-size: 32px;
-		background-image: url("leopardskin.jpg");
-        color: white;
-        border: 4px solid #800080;
-        text-align: center;
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+table {
+  width: 100%;
+  border: 4px solid #800080;
+  border-collapse: collapse;
+  font-family: Helvetica Neu, cursive;
+  text-align: middle;
+  table-layout: fixed;
+}
+ .bold-text {
+  font-weight: bold;
+}
+thead {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
-	tbody {
-		background-image: url("leopardskin.jpg");
-    }
+tfoot {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+}
+td,
+th {
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: san seif, cursive;
+}
 
-	tr:nth-child(odd) {
-		background-color: #ff33cc;
-	}
+th {
+  font-family: Rock Salt, cursive;
+  font-size: 16px;
+  background-image: url("https://cdn.glitch.me/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg");
+  color: white;
+  border: 4px solid #800080;
+  text-align: center;
+  font-weight: bold;
+}
+tfoot {
+  text-align-last: middle;
+  font-weight: bold;
+}
+tr:nth-child(odd) {
+  background-color: #ff33cc;
+}
 
-	tr:nth-child(even) {
-		background-color: #e495e4;
-	}
+tr:nth-child(even) {
+  background-color: #e495e4;
+}
+tfoot th:first-child {
+  text-align: right;
+  font-family: Rock Salt, cursive;
+  font-weight: bold;
+}
 p {
-  font-family: Rock Salt;
+  font-family: Rock Salt, cursive;
   text-align: right;
 }
-	
-</style>
+tfoot {
+  padding: auto;
+}
+tfoot th {
+  text-align: left;
+  font-family: Helvetica Neu;
+  font-weight: bold;
+  font-size: 16px;
+}
+		
+  </style>
 </head>
 <body>
 	<table>
@@ -115,11 +137,11 @@ p {
 		</tbody>
 		<tfoot>
 			<tr>
-             <th colspan="2">TOTAL ALBUMS</th>
-             <th colspan="2">77</th>
-			</tr>
+          <th colspan="2">TOTAL ALBUMS</th>
+          <th  colspan="2">77</th>
+        </tr>
 		</tfoot>
 	</table>
-    <strong><p>A SUMARY OF THE UK'S MOST FAMOUS PUNK BANDS</p></strong>
+    <strong><p>A SUMARY OF THE UK'S MOST FAMOUS PUNK BANDS</p></strong> 
 </body>
 </html>
